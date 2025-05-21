@@ -1,14 +1,88 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 13px;
+    font-family: "Ancizar Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 img{
-    width: 20%;
+    width: 30%;
 }
 #produits{
+      display: flex
+;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    gap: 20px;
+    
     }
+.card{
+    border: 1px solid#8f6565;
+        box-shadow: 10px 10px 10px 10px rgb(206 183 183);
+        border-radius: 30px;
+            padding: 24px;
+            width: 50%;
+            background-color: beige;
+}
+button{
+    /* background-color: green;
+    height: 37px; */
+      display: inline-block;
+  background-color: #7b38d8;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+button:hover {
+  background-color: #555;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    }
+   /* section{
+    background-color: #7b38d8;
+   }
+
+   */
+.customer{
+    background-color: beige;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+}
+.look{
+    border: 1px solid black;
+    width: 290px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 10px 10px 10px 10px rgb(206 183 183);
+}
+#commentaires{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    text-align: center;}
+    h1{
+        border: 1px solid black;
+        text-align: center;
+         background-color: #7b38d8;
+         color: #eeeeee;
+    }
+ 
+
+
 
 
 
