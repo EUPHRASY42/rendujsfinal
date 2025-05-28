@@ -24,7 +24,7 @@ function patisserie(url) {
             section.classList.add("customer")
 
             data.avantagesClients.forEach(element => {
-                let avantages = document.createElement("div");
+                let avantages = document.createElement("p");
 
                 // avantages.classList.add("clients");
                 avantages.textContent = element;
@@ -36,21 +36,26 @@ function patisserie(url) {
 
             data.produits.forEach(element => {
                 const produits = document.getElementById("produits");
+                let decouvrir=document.createElement("p")
+                // decouvrir.textContent=("Decouvrez nos meilleurs produits")
+                // produits.appendChild(decouvrir)
                 let creation = document.createElement("div");
                 creation.classList.add("card");
                 let intitule = document.createElement("h3")
                 intitule.textContent = element["nom"];
+                let image = document.createElement("img");
+                image.src = textContent = element["image-url"];
                 creation.appendChild(intitule)
                 let paragraphe = document.createElement("p");
                 paragraphe.textContent = element["description"];
                 // creation.textContent=element["description"];
                 // setAttribute("src","img-url")
                 // creation.setAttribute=element["image-url"];
-                let image = document.createElement("img");
-                image.src = textContent = element["image-url"];
+                
                 produits.appendChild(creation)
-                creation.appendChild(paragraphe);
                 creation.appendChild(image);
+                creation.appendChild(paragraphe);
+                
             });
             data.temoignages.forEach(element => {
 
@@ -61,6 +66,13 @@ function patisserie(url) {
                 creer.textContent = element["prenom"];
                 let expérience = document.createElement("p");
                 expérience.textContent = element["commentaire"];
+
+            //     let notation=document.createElement("img")
+            // image.src = textContent = ("étoiles.jpg");
+
+
+            //     division.appendChild(notation);
+
                 commentaires.appendChild(division);
                 division.appendChild(creer);
                 division.appendChild(expérience);
